@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create elements using js</title>
+</head>
+<body>
+    <p>
+        Javascript have 3 data types:
+    </p>
+    <ul id="li"></ul>
+    <script>
+        e1=document.createElement("li")
+        e1.textContent="Number"
+        y=document.getElementById("li")
+        y.appendChild(e1)
+        
+        e1=document.createElement("li")
+        e1.textContent="String"
+        y=document.getElementById("li")
+        y.appendChild(e1)
+
+        e1=document.createElement("li")
+        e1.textContent="Boolean"
+        y=document.getElementById("li")
+        y.appendChild(e1)
+    </script>
+</body>
+</html>

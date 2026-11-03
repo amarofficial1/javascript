@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        temp=30
+        switch(true)
+        {
+            case (temp<0):
+                document.write("<br> Freezing weather")
+                break
+            case (temp>0 && temp<=10):
+                document.write("<br> Very Cold weather")
+                break
+            case (temp>10 && temp<=20):
+                document.write("<br> Cold weather")
+                break
+            case (temp>20 && temp<=30 ):
+                document.write("<br> Normal weather")
+                break
+            case (temp>30 && temp<=40):
+                document.write("<br> Hot weather")
+                break
+            case (temp>40):
+                document.write("<br> Very Hot weather")
+                break
+            default:
+                document.write("<br> Invalid weather reading")
+                break
+        }
+    </script>
+</body>
+</html>

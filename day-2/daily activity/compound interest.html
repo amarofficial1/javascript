@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        p=1000 //principal amount
+        r=10 //annual rate of interest
+        t=2 //time period in years
+        si=(p*r*t)/100
+        document.write("<br>Principal="+p)
+        document.write("<br>Rate="+r+"%")
+        document.write("<br>Time="+t)
+        document.write("<br><br>Simple Interest="+si)
+        //compound interest= A-P
+        a=p*((1+(r/100))**t) //a= total amount
+        document.write("<br> A="+a)
+        ci=a-p
+        document.write("<br><br>Compound Interest="+ci)
+    </script>
+</body>
+</html>
