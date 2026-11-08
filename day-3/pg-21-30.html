@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="name"></div>
+    <div id="btn">
+    <input type="button" value="button">
+    </div>
+    <ul id="list">
+        <li>apple</li>
+        <li>orange</li>
+        <input type="submit" value="Button">
+    </ul>
+    <script>
+// pg21
+        x=document.createElement("div")
+        x.innerHTML="hi all"
+        y=document.getElementById("body")
+        z=document.createElement("h1")
+        z.textContent="DUK"
+        a=document.createElement("h1")
+        a.textContent="KBA"
+        x.appendChild(z)
+        x.appendChild(a)
+        y.appendChild(x)
+        
+// pg22
+        x=['amar','agney','shiva','chethan','singh']
+        a=document.createElement("p")
+        a.innerHTML="The Array is: "+x+"<br>"+x[0]
+        b=document.createElement("p")
+        b.textContent=x[1]
+        c=document.createElement("p")
+        c.textContent=x[2]
+        d=document.createElement("p")
+        d.textContent=x[3]
+        e=document.createElement("p")
+        e.textContent=x[4]
+        y=document.getElementById("name")
+        y.appendChild(a)
+        y.appendChild(b)
+        y.appendChild(c)
+        y.appendChild(d)
+        y.appendChild(e)
+
+// pg23
+        x=document.createElement("p")
+        x.textContent="New Paragraph Created"
+        y=document.getElementById("btn")
+        y.appendChild(x)
+
+// pg24
+        a=document.createElement("table")
+        r1=document.createElement("tr")
+        c1=document.createElement("th")
+        c1.textContent="Name"
+        c2=document.createElement("th")
+        c2.textContent="Marks"
+        r1.appendChild(c1)
+        r1.appendChild(c2)
+        a.appendChild(r1)
+        r2=document.createElement("tr")
+        c1=document.createElement("td")
+        c1.textContent="Amar"
+        c2=document.createElement("td")
+        c2.textContent="90"
+        r2.appendChild(c1)
+        r2.appendChild(c2)
+        a.appendChild(r2)
+        r3=document.createElement("tr")
+        c1=document.createElement("td")
+        c1.textContent="Chethan"
+        c2=document.createElement("td")
+        c2.textContent="80"
+        r3.appendChild(c1)
+        r3.appendChild(c2)
+        a.appendChild(r3)
+        x=document.getElementById("body")
+        x.appendChild(a)
+        
+// pg25
+        a=document.createElement("li")
+        a.textContent="bluberry"
+        x=document.getElementById("list")
+        x.appendChild(a)
+        
+// pg26
+        x=5
+        y=7
+        document.write("<br>The value of x: "+x)
+        document.write("<br>The value of y: "+y)
+        if(x>=y)
+        document.write("<br>"+x+" is greater than "+y)
+        else
+        document.write("<br>"+y+" is greater than "+x)
+
+// pg27
+        x=101
+        document.write("<br><br>The value of x: "+x)
+        if(x==100)
+        document.write("<br>"+x+" equals 100.")
+    else
+        document.write("<br>"+x+"not equals 100.")
+
+// pg28
+        x=6
+        y=7
+        document.write("<br><br>The value of x: "+x)
+        document.write("<br>The value of y: "+y)
+        if(x!=y)
+        document.write("<br>"+x+" != "+y)
+        else
+        document.write("<br>"+x+" == "+y)
+
+// pg29
+        a=10
+        b="10"
+        document.write("<br><br>The value of a: "+a)
+        document.write("<br>The value of b: "+b)
+        if(a==b)
+    {
+        document.write("<br>both values are same.")
+        if(a===b)
+        document.write("<br>both values are same and have same datatype.")
+        else
+        document.write("<br>both values are same but dont have the same datatype. a= "+a+" is a "+typeof(a)+" and b = "+b+" is a "+typeof(b))   
+    }
+        else
+    {
+        document.write("<br>both values are not same.")
+        if(typeof(a)==typeof(b))
+        document.write("<br>values are not same but have same datatype.")
+        else
+        document.write("<br>values are  not same and dont have the same datatype. a= "+a+" is a "+typeof(a)+" and b = "+b+" is a "+typeof(b))   
+    }
+
+// pg30
+    x=19
+        document.write("<br><br>The age of x: "+x)
+        if(x>18)
+        document.write("<br>"+x+" is older than 18")
+        else if(x==18)
+        document.write("<br>"+x+" is equals 18")
+        else
+        document.write("<br>"+x+" is younger than 18")
+
+    </script>
+</body>
+</html>

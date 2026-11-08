@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="name"></div>
+    <p id="square"></p>
+    <h1 id="h1"></h1>
+    <h2 id="h2"></h2>
+    <h3 id="h3"></h3>
+    <div id="para"></div>
+    <div id="hai"></div>
+    <div id="ul"></div>
+    <div id="btn"></div>
+    <div id="para2"></div>
+
+
+    <script>
+// pg11
+a=20
+b=30
+console.log("a = "+a)
+console.log("b = "+b)
+console.log("sum =", a+b)
+console.log("difference =", a-b)
+console.log("product =", a*b)
+console.log("Quotient =", a/b)
+
+// pg12
+        document.getElementById("name").innerHTML="<h1>Amar Jiji </h1>Im from tdpa,i love football."
+        
+// pg13
+        x=12
+       document.getElementById("square").innerHTML="<br>X = "+x+"<br>Square of x= "+(x**2)
+
+// pg14
+         document.getElementById("h1").innerHTML="KBA"
+         document.getElementById("h2").innerHTML="KBA"
+         document.getElementById("h3").innerHTML="KBA"
+
+// pg15
+        x=3
+        y=5
+        z=6
+        console.log("Value of x= "+x)
+        console.log("Value of y= "+y)
+        console.log("Value of z= "+z)
+        console.log("x+y+z= "+(x+y+z))
+
+// pg16
+        x=document.createElement("p")
+        x.textContent="Welcome to DOM Manipulation."
+        y=document.getElementById("para")
+        y.appendChild(x)
+
+// pg17
+        x=document.createElement("h1")
+        x.textContent="My First JavaScript Heading"
+        y=document.getElementById("hai")
+        y.appendChild(x)
+
+// pg18
+        x=document.createElement("ul")
+        l1=document.createElement("li")
+        l1.textContent="HTML"
+        l2=document.createElement("li")
+        l2.textContent="CSS"
+        l3=document.createElement("li")
+        l3.textContent="JAVA SCRIPT"
+        x.appendChild(l1)
+        x.appendChild(l2)
+        x.appendChild(l3)
+        y=document.getElementById("ul")
+        y.appendChild(x)
+
+// pg19
+        x=document.createElement("input")
+        x.type="button"
+        x.value="Submit"
+        y=document.getElementById("btn")
+        y.appendChild(x)
+
+// pg20
+        x=document.createElement("p")
+        x.innerHTML="Multiplication table of 7 is:<br>"+"<br>7*1= "+7*1
+        +"<br>7*2= "+7*2
+        +"<br>7*3= "+7*3
+        +"<br>7*4= "+7*4
+        +"<br>7*5= "+7*5
+        +"<br>7*6= "+7*6
+        +"<br>7*7= "+7*7
+        +"<br>7*8= "+7*8
+        +"<br>7*9= "+7*9
+        +"<br>7*10= "+7*10
+        y=document.getElementById("para2")
+        y.appendChild(x)
+
+
+    </script>
+</body>
+</html>
