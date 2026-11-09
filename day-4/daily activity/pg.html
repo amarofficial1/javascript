@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //program to print natural numbers from 10 to 50 using while loop . Find the sum & average.
+        document.write("<br><br>")
+        for(i=10;i<=50;i++)
+        document.write("<br>"+i)
+
+        //program to print cube of numbers from 10 to 30
+        document.write("<br><br>Cube of numbers from 10-30= ")
+        for(i=10;i<=30;i++) 
+        document.write("<br>"+i+"**3= "+i**3)
+    
+        //program to print multiplication table for a given number
+        document.write("<br><br>Multiplication table of 5= ")
+        x=5
+        for(i=1;i<=10;i++)
+        document.write("<br>5*"+i+"="+i*x)
+        
+        //program to print reverse of a number
+        x=6969
+        document.write("<br><br>x= "+x)
+        document.write("<br>Reverse of x= ")
+        for(i=1;i<=4;i++)
+    {
+        y=x%10
+        document.write(y)
+        x=Math.floor(x/10)
+
+    }
+
+    //pg to check if a string is palindrome or not
+    x="malayalam"
+    y=x.length
+    z=""
+    document.write("<br><br>x= "+x)
+    for(i=y-1;i>=0;i--)
+    {
+        a=x[i]
+        z=z.concat(a)
+    }
+    document.write("<br>z= "+z)
+    if(x==z)
+        document.write("<br>The string is palindrome.")
+    else
+        document.write("<br>The string is not palindrome.")
+
+
+    
+
+    //program to print the patterns
+
+    //25,30,35,40,45,50
+        document.write("<br><br>Pattern:")
+        for(i=25;i<=50;i++)
+    {
+        if(i%5==0)
+        document.write("<br>"+i)
+
+    }
+
+    //10,100,1000,10000
+     document.write("<br><br>Pattern:")
+        for(i=1;i<=4;i++)
+    {
+        document.write("<br>"+10**i)
+
+    }
+
+    //8,10,12,14,16,18,20
+     document.write("<br><br>Pattern:")
+        for(i=8;i<=20;i++)
+    {
+        if(i%2==0)
+        document.write("<br>"+i)
+
+    }
+
+    </script>
+</body>
+</html>
