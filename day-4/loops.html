@@ -85,6 +85,19 @@ x=Math.floor(x/10)
 document.write(y)
 }
 
+//pg reverse of a number
+x=666
+z=0
+document.write("<br><br>x= "+x)
+document.write("<br>")
+for(i=1;i<=3;i++)
+{
+y= x%10
+x=Math.floor(x/10)
+z=z*10+y
+}
+document.write("<br>Reverse= "+z)
+
 // pg to check if a number is armstrong or not
 x=153
 a=0

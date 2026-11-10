@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //program to print natural numbers from 10 to 50 using while loop . Find the sum & average.
+        document.write("<br><br>")
+        s=0
+        i=10
+        while(i<=50)
+    {
+        document.write("<br>"+i)
+        s=s+i
+        i++
+    }
+        document.write("<br>Sum= "+s)
+        document.write("<br>Average= "+(s/40))
+
+         //program to print cube of numbers from 10 to 30
+        document.write("<br><br>Cube of numbers from 10-30= ")
+        i=10
+        while(i<=30) 
+    {
+        document.write("<br>"+i+"**3= "+i**3)
+        i++
+    }
+        //program to print multiplication table for a given number
+        document.write("<br><br>Multiplication table of 5= ")
+        x=5
+        i=1
+        while(i<=10)
+    {
+        document.write("<br>5*"+i+"="+i*x)
+        i++
+    }
+        
+        //program to print reverse of a number
+        x=6969
+        document.write("<br><br>x= "+x)
+        document.write("<br>Reverse of x= ")
+        i=1
+        while(i<=4)
+    {
+        y=x%10
+        document.write(y)
+        x=Math.floor(x/10)
+        i++
+    }
+
+    //pg to check if a string is palindrome or not
+    x="malayalam"
+    y=x.length
+    z=""
+    document.write("<br><br>x= "+x)
+    i=y-1
+    while(i>=0)
+    {
+        a=x[i]
+        z=z.concat(a)
+        i--
+    }
+    document.write("<br>z= "+z)
+    if(x==z)
+        document.write("<br>The string is palindrome.")
+    else
+        document.write("<br>The string is not palindrome.")
+
+
+    //find the sum of the elements in array
+    a=[]
+    i=0
+    while(i<5)
+    {
+        a[i]=i
+        i++
+    }
+    document.write("<br><br>The array is:"+a)
+    document.write("<br>Sum of array A is:")
+        c=0
+        i=0
+        while(i<a.length)
+        {
+            c=c+a[i]
+            i++
+        }
+        document.write(c)
+
+    // program to store & print even numbers upto 20 in an array
+    a=[]
+    i=0
+    j=1
+    while(i<10)
+    {
+        if(j%2==0)
+        a[i]=j
+        else
+        i--
+        i++
+        j++
+    }
+    document.write("<br><br>The Array A= "+a)
+
+    // program to check whether a number is in the array and if present print the location
+    a=[]
+    i=0
+    while(i<5)
+    {
+        a[i]=i
+        i++
+    }
+    document.write("<br><br>The Array A= "+a)
+    x=3
+    document.write("<br>x= "+x)
+    c=0
+    i=0
+     while(i<a.length)
+    {
+        if(a[i]==x)
+    {
+        document.write("<br>"+x+" is in the list and the index of " +x+" in A= "+i)
+        c++
+    }
+    i++
+    }
+    if(c==0)
+    document.write("<br>Element is not in the array.")
+
+    //program to remove an element present in a specific location
+    a=[1,2,3,4,5,6]
+    document.write("<br><br>The Array A= "+a)
+    x=3
+    i=0
+    while(i<a.length)
+    {
+        if(i==x)
+        a.splice(x,1)
+        i++
+    }
+    document.write("<br>Position= "+x)
+    if(x>a.length)
+    document.write("<br>The position is out of index ")
+    else
+    {
+    document.write("<br>Array after deletion A= "+a)
+    }
+
+    //program to remove an element present in a specific location
+    a=[1,2,3,4,5,6]
+    document.write("<br><br>The Array A= "+a)
+    x=4
+    i=0
+    y=0
+    document.write("<br>Position= "+x)
+    if(x<a.length)
+    {
+        while(i<a.length)
+    {
+        if(i==x)
+    {
+        i++
+        a[y]=a[i]
+    }
+    else
+    a[y]=a[i]
+    
+    i++
+    y++
+    }
+    a.pop()
+    document.write("<br>Array after deletion A= "+a)
+    }
+    else
+    document.write("<br>Position is out of index")
+
+    
+    //program to copy an element in an aaray to another array
+    a=[1,2,3,4,5]
+    b=[3,4,5]
+    i=0
+    document.write("<br><br>The Array A= "+a)
+    document.write("<br>The Array B= "+b)
+    x=3
+    document.write("<br>Element= "+x)
+    while(i<a.length)
+    {
+        if(a[i]==x)
+        b.push(x)
+    i++
+    }
+    document.write("<br><br>The Array A= "+a)
+    document.write("<br>The Array B= "+b)
+
+
+
+    </script>
+</body>
+</html>

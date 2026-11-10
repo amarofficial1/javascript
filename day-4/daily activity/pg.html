@@ -9,8 +9,18 @@
     <script>
         //program to print natural numbers from 10 to 50 using while loop . Find the sum & average.
         document.write("<br><br>")
+        s=0
+        x=0
         for(i=10;i<=50;i++)
+    {
         document.write("<br>"+i)
+        s=s+i
+        x++
+    }
+        document.write("<br>Sum= "+s)
+        document.write("<br>Sum= "+x)
+        document.write("<br>Average= "+(s/x))
+
 
         //program to print cube of numbers from 10 to 30
         document.write("<br><br>Cube of numbers from 10-30= ")
@@ -75,9 +85,8 @@
 
     //8,10,12,14,16,18,20
      document.write("<br><br>Pattern:")
-        for(i=8;i<=20;i++)
+        for(i=8;i<=20;i=i+2)
     {
-        if(i%2==0)
         document.write("<br>"+i)
 
     }
