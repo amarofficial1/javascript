@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //pg to create functions based on arithmatic operations and use switch to call it 
+       function add(x,y)
+       {
+        a=x+y
+        document.write("<br>Sum= "+a)
+       }
+        function sub(x,y)
+       {
+        a=x-y
+        document.write("<br>Difference= "+a)
+       }
+        function mult(x,y)
+       {
+        a=x*y
+        document.write("<br>Product= "+a)
+       }
+        function div(x,y)
+       {
+        a=x/y
+        document.write("<br>Quotient= "+a)
+       }
+        function mod(x,y)
+       {
+        a=x%y
+        document.write("<br>Remainder= "+a)
+       }
+
+       x=5
+       y=6
+       document.write("<br> x= "+x)
+       document.write("<br> y= "+y)
+       z="*"
+       document.write("<br> Operand= "+z)
+       switch(z)
+       {
+        case '+':
+            add(x,y)
+            break
+        case '-':
+            sub(x,y)
+            break
+        case '*':
+            mult(x,y)
+            break
+        case '/':
+            div(x,y)
+            break
+        case '%':
+            div(x,y)
+            break
+        default:
+            break
+       }
+    </script>
+</body>
+</html>

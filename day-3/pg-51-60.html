@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pg51
+        x=30
+        document.write("<br><br>x="+x)
+        if(x>0 && x<100 && x!=50)
+        document.write("<br>The Number is valid")
+        else
+        document.write("<br>The Number is not valid")
+
+        //pg52
+        x=33
+        d=true
+        document.write("<br><br>x="+x)
+        if(x>=18 && x<=62 && d==true)
+        document.write("<br>The person is eligible for driving license")
+        else
+        document.write("<br>The person is not eligible for driving license")
+
+        //pg53
+        u="admin"
+        a=false
+        s=true
+        document.write("<br><br>user= "+u)
+        document.write("<br>Account activity= "+a)
+        document.write("<br>Subscription= "+s)
+        if((u=="admin"| a==true) && s==true)
+        document.write("<br>user can access website")
+        else
+        document.write("<br>user cannot access website")
+
+        //pg54
+        a = 10;
+        b = 20;
+         c = 30;
+
+        console.log(a < b && b < c);//true
+        console.log(a > b || b < c);//true
+        console.log(!(a > b));//true
+        console.log(a < b && b > c);//false
+
+        //pg55
+        age = 17;
+        hasPermission = true;
+        hasID = false;
+
+        console.log(age >= 18 && hasPermission);//false
+        console.log(age >= 18 || hasPermission);//true
+        console.log(!(hasID));//true
+        console.log((age >= 18 || hasPermission) && hasID);//false
+
+        //pg56
+        x=3
+        document.write("<br><br>x="+x)
+        if(x>=0)
+        document.write("<br>The Number is positive.")
+    else
+        document.write("<br>The Number is negative.")
+
+        //pg57
+        x=3
+        document.write("<br><br>x="+x)
+        if(x%2==0)
+        document.write("<br>The Number is an even number.")
+    else
+        document.write("<br>The Number is an odd number.")
+
+        //pg58
+        x=19
+        document.write("<br><br>Age= "+x)
+        if(x>=18)
+        document.write("<br>The person is eligible to vote.")
+    else
+        document.write("<br>The person is not eligible to vote.")
+
+        //pg59
+        m=41
+        document.write("<br><br>Marks= "+m)
+        if(m>=40)
+        document.write("<br>He has passed the exam.")
+    else
+        document.write("<br>He has failed the exam.")
+
+        //pg60
+        x=7
+        document.write("<br><br>x= "+x)
+        if(x%5==0)
+        document.write("<br>"+x+" is divisible by 5.")
+        else
+        document.write("<br>"+x+" is not divisible by 5.")
+
+        
+
+
+
+    </script>
+</body>
+</html>
