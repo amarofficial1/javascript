@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //pg91
+        p = 2034
+        b = 2000
+        if (p == 2034) {
+            if (b > 0) {
+                w = 2000
+                document.write("<br>Withdrawal Amount= " + w)
+                if (w % 100 == 0) {
+                    document.write("<br>Withdrawal Successfull.")
+
+                }
+                else {
+                    document.write("<br>Withdrawal Failed, Please enter an amount multiple of 100.")
+                }
+            }
+            else
+                document.write("<br>Insufficient Bankbalance.")
+
+        }
+        else {
+            document.write("<br><br>Incorrect password")
+        }
+
+        //pg92
+        p = 4000
+        d = 0
+        c = "premium"
+        document.write("<br><br>Purchase amount= " + p)
+        if (p >= 10000)
+            d = 20
+        else if (p >= 5000 && p <= 9999)
+            d = 10
+        else if (p >= 2000 && p <= 4999)
+            d = 5
+        else
+            d = 0
+        if (c == "premium")
+            d = d + 5
+        total = (p / 100) * d
+        document.write("<br><br>Total Amount= " + total)
+
+
+        //pg93
+        p = 90
+        i = 450000
+        a = "good"
+        document.write("<br><br>Percentage= " + p)
+        document.write("<br>Income= " + i)
+        document.write("<br>Behaviour= " + a)
+        if (p >= 85 && i <= 300000 && a == "good")
+            document.write("<br><br>Eligibile for scholarship")
+        else
+            document.write("<br><br>Not eligibile for scholarship")
+
+
+        //pg94
+        u = "admin"
+        p = "12345"
+        if (u == "admin" && p == "12345")
+            document.write("<br><br>Login Successful")
+        else if (u != "admin" && p == "12345")
+            document.write("<br><br>Invalid Username")
+        else if (u == "admin" && p != "12345")
+            document.write("<br><br>Invalid Password")
+        else
+            document.write("<br><br>Invalid Username & password")
+
+
+        //pg95
+        a = 50
+        b = 60
+        document.write("<br><br>Team A score= " + a)
+        document.write("<br>Team B score= " + b)
+
+        if (a > b)
+            document.write("<br><br>Team A wins")
+        else if (a == b)
+            document.write("<br><br>Match Tied")
+        else
+            document.write("<br><br>Team B wins")
+        if (a < 50 || b < 50)
+            document.write("<br><br>Low Scoring Mathc")
+
+
+        //pg96
+        p = 90
+        a = 80
+        e = 3
+        document.write("<br><br>Marks= " + p)
+        document.write("<br>Attendance= " + a + "%")
+        document.write("<br>Experience= " + e)
+        if (p >= 90 && a >= 95)
+            document.write("<br>Excellent")
+        else if (p >= 75 && a >= 85)
+            document.write("<br>Good")
+        else if (p >= 50 && a >= 75)
+            document.write("<br>Average")
+        else
+            document.write("<br>Needs Improvement")
+        if (e > 5)
+            document.write("<br>Eligible for Experience bonus")
+        else
+            document.write("<br>Not eligible for Experience bonus")
+
+
+
+        //pg97
+        u = 100
+        p = "senior"
+        r = 0
+        b = 0
+        document.write("<br><br>Units used= " + u)
+        document.write("<br>Citizen= " + p)
+        if (u >= 100 && u < 200) {
+            r = 2
+            b = u * r
+        }
+        else if (u >= 200 && u < 300) {
+            r = 3
+            b = u * r
+        }
+        else if (u >= 300 && u < 400) {
+            r = 5
+            u * r
+        }
+        else if (u >= 400) {
+            r = 7
+            b = u * r
+        }
+        if (b > 2000)
+            b = b + ((b / 100) * 5)
+        if (p == "senior")
+            b = b - ((b / 100) * 10)
+        document.write("<br><br> The Final amount= " + b)
+
+
+        //pg98
+        a = 19
+        d = true
+        i = true
+        document.write("<br><br>Age= " + a)
+        document.write("<br>Driving test= " + d)
+        document.write("<br>Valid ID= " + i)
+
+        if (a < 18)
+            document.write("<br><br>Not Eligible – Underage")
+        else {
+            if (d != true)
+                document.write("<br>Driving Test Not Cleared")
+            else {
+                if (i != true)
+                    document.write("<br>Identity Proof Required")
+                else
+
+                    document.write("<br>Eligible for license")
+
+            }
+
+        }
+
+        //pg99
+        a = 24
+        n = 20
+        b = 0
+        d = 0
+        document.write("<br><br>Age= " + a)
+        document.write("<br>No of tickets= " + n)
+
+
+        if (a < 12) {
+            d = 50
+            b = (n * 200) - ((200 / 100) * 50)
+        }
+        else if (a >= 60) {
+            d = 30
+            b = (n * 200) - ((200 / 100) * 30)
+        }
+        else {
+            b = n * 200
+        }
+        if (n >= 5)
+            b = b - ((b / 100) * 10)
+        document.write("<br>Total amoount= " + b)
+
+        //pg100
+        a="amar"
+        m=80
+        s=90
+        e=100
+        p=85
+        av=0
+        document.write("<br><br>Marks of maths= "+m)
+        document.write("<br>Marks of science= "+s)
+        document.write("<br>Marks of english= "+e)
+        
+
+        if(m<35 || s<35 || e<35)
+        document.write("<br>Failed")
+    if(p<75)
+        document.write("<br>Not eligible for examination")
+    if(m>=35 && s>=35 && e>=35 && p>=75)
+    {
+        av=(m+s+e)/3
+        if(av>=90)
+        g="A+"
+    else if(av>=80 && av<=89)
+    g="A"
+    else if(av>=70 && av<=79)
+g="B"
+else if(av>=60 && av<=69)
+g="C"
+else if(av<60)
+g="D"
+        document.write("<br><br>Name= "+a)
+        document.write("<br>Total Marks= ",m+s+e)
+        document.write("<br>Average= "+av)
+        document.write("<br>Grade= "+g)
+        document.write("<br>Passed")
+    }
+    else
+        document.write("<br>Failed")
+
+
+    </script>
+</body>
+
+</html>

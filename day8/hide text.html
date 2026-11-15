@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod facere vitae dolore obcaecati aperiam a, aliquam eaque ea, et consequuntur. Error praesentium harum cumque, ducimus dignissimos magnam beatae consequatur!</p>
+    <p id="p2"></p>
+    <input type="button" value="Hide Text" onclick="hide()">
+    <script>
+        function hide()
+        {
+            x=document.getElementById("p")
+            y=document.createElement("p")
+            y.textContent=x.textContent
+            x.remove()
+            z=document.createElement("input")
+            z.type="button"
+            z.value="Show more..."
+            z.onclick=()=>{
+                a.appendChild(y)
+                a.removeChild(z)
+            }
+            a=document.getElementById("p2")
+            a.appendChild(z)
+            
+           
+        }
+    </script>
+</body>
+</html>

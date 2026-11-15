@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Username: </label>
+    <input type="text" placeholder="enter your username." id="u" required><br><br>
+    <label>Password: </label>
+    <input type="password" placeholder="enter your password." id="p" required><br><br>
+    <input type="button" value="Login" onclick="login()">
+    <p id="l1"></p>
+    <script>
+        const login=()=>//arrow function
+        {
+            a="amar"
+            b="123"
+            x=document.getElementById("u").value
+            y=document.getElementById("p").value
+            if( a==x && b==y)
+            document.getElementById("l1").innerHTML="Login Successfull"
+            else
+            document.getElementById("l1").innerHTML="Please enter correct credentials"
+
+        }
+    </script>
+</body>
+</html>

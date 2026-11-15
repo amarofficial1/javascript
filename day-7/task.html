@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Task: </label><br><br>
+    <input type="text" placeholder="enter the task" required id="task">
+    <br><br>
+    <input type="button" value="Add" onclick="add()">
+    <ul id="one"></ul>
+    <script>
+        function add()
+        {
+            x=document.getElementById("task").value
+            z=document.createElement("li")
+            y=document.createElement("span")
+            y.textContent=x
+            b=document.createElement("input")
+            b.type="button"
+            b.value="edit"
+            b.onclick=()=>
+        {
+            r=prompt("Enter a new task")
+            y.textContent=r
+        }
+            c=document.createElement("input")
+            c.type="button"
+            c.value="remove"
+            c.onclick=()=>{
+                a.removeChild(z)
+            }
+            a=document.getElementById("one")
+            z.appendChild(y)
+            z.appendChild(b)
+            z.appendChild(c)
+            a.appendChild(z)
+
+        }
+    </script>
+</body>
+</html>
