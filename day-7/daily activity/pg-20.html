@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Cat" onclick="photo()" id="n" >
+    <input type="button" value="Dog" onclick="photo1()" id="n" >
+    <input type="button" value="Panda" onclick="photo2()"id="n">
+    <img id="out" src=""></img>
+    <script>
+        photo=()=>
+    {
+        x=document.getElementById("n")
+        y=document.getElementById("out")
+        y.src="images.jfif" 
+
+    }
+     photo1=()=>
+    {
+        x=document.getElementById("n")
+        y=document.getElementById("out")
+        y.src="images (1).jfif"
+    }
+     photo2=()=>
+    {
+        x=document.getElementById("n")
+        y=document.getElementById("out")
+        y.src="images (2).jfif"    
+
+    }
+    </script>
+</body>
+</html>

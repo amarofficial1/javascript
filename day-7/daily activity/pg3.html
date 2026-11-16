@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter 1st No:</label>
+    <input type="text"  id="1st" required>
+    <label>Enter 2nd No:</label>
+    <input type="text"  id="2nd" required>
+    <br><input type="button" value="+" onclick="add()">
+    <p id="out"></p>
+    <script>
+        add=()=>
+    {
+        x=Number(document.getElementById("1st").value)
+        y=Number(document.getElementById("2nd").value)
+        z=x+y
+        a=document.getElementById("out")
+        a.innerHTML="Sum= "+z
+        
+
+
+    }
+    </script>
+</body>
+</html>

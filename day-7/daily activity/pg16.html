@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the number:</label>
+    <input type="text" placeholder="Enter the no." id="n">
+    <br><input type="button" value="Factorial!" onclick="fact()">
+    <p id="out"></p>
+    <script>
+        fact=()=>
+    {
+        try
+        {
+            f=1
+            x=Number(document.getElementById("n").value)
+            for(i=1;i<=x;i++)
+        {
+            f=f*i
+        }
+        document.getElementById("out").innerHTML="Factorial= "+f
+        }
+        catch (error)
+        {
+            console.log(error)
+        }
+    }
+    </script>
+</body>
+</html>

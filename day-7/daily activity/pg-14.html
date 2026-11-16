@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the First no: </label>
+    <input type="text" placeholder="enter 1st no" required id="n">
+    <label>Enter the Second no: </label>
+    <input type="text" placeholder="enter 2nd no" required id="n2">
+    <label>Enter the Third no: </label>
+    <input type="text" placeholder="enter 3rd no" required id="n3">
+    <br><br><input type="button" value="Check" onclick="lar()">
+    <p id="out"></p>
+    <script>
+        lar=()=>
+    {
+        x=Number(document.getElementById("n").value)
+        y=Number(document.getElementById("n2").value)
+        z=Number(document.getElementById("n3").value)
+
+        if(x==y || y==z || x==z)
+        document.getElementById("out").innerHTML=" All 3 numbers are equal."
+        else if(x>y && x>z)
+        document.getElementById("out").innerHTML=x+" is the largest no."
+        else if(y>x && y>z)
+        document.getElementById("out").innerHTML=y+" is the largest no."
+        else
+        document.getElementById("out").innerHTML=z+" is the largest no."
+    }
+    </script>
+</body>
+</html>

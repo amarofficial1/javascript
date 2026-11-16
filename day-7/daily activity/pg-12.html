@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the number: </label>
+    <input type="text" placeholder="enter the number" required id="n">
+    <br><br><input type="button" value="Check" onclick="even()">
+    <p id="out"></p>
+    <script>
+        even=()=>
+    {
+        x=Number(document.getElementById("n").value)
+        if(x%2==0)
+        document.getElementById("out").innerHTML=x+ " is an even number"
+        else
+        document.getElementById("out").innerHTML=x+ " is an odd number"
+
+    }
+    </script>
+</body>
+</html>

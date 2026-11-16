@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Radius: </label>
+    <input type="text" placeholder="enter the radius" required id="r">
+    <br><br><input type="button" value="Area" onclick="area()">
+    <input type="button" value="Circumference" onclick="cir()">
+    <p id="area"></p>
+    <script>
+        area=()=>
+    {
+        x=Number(document.getElementById("r").value)
+        y=3.14*(x**2)
+        document.getElementById("area").textContent="Area= "+y
+    }
+    cir=()=>
+    {
+        x=Number(document.getElementById("r").value)
+        y=2*3.14*x
+        document.getElementById("area").textContent="Circumference= "+y
+    }
+    </script>
+</body>
+</html>

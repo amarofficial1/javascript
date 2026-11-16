@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="out">0</p>
+    <br><input type="button" value="Increase" onclick="inc()">
+    <br><input type="button" value="Decrease" onclick="dec()">
+
+    <script>
+        inc = () => {
+            a = Number(document.getElementById("out").textContent)
+            document.getElementById("out").innerHTML = ++a
+
+        }
+        dec = () => {
+            a = Number(document.getElementById("out").textContent)
+            document.getElementById("out").innerHTML = --a
+
+
+        }
+    </script>
+</body>
+
+</html>

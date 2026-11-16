@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the number:</label>
+    <input type="text" placeholder="Enter the no." id="n">
+    <br><input type="button" value="Check" onclick="prime()">
+    <p id="out"></p>
+    <script>
+        prime=()=>
+    {
+        try
+        {
+            f=0
+            x=Number(document.getElementById("n").value)
+            if(x==1)
+        {
+            document.getElementById("out").innerHTML=x+" is neither prime nor even."
+           return 0
+        }
+            for(i=1;i<=x;i++)
+        {
+            if(x%i==0)
+            f++
+        }
+        if(f==2)
+        document.getElementById("out").innerHTML=x+" is a prime no."
+        else
+        document.getElementById("out").innerHTML=x+" is not a prime no."
+        }
+        catch (error)
+        {
+            console.log(error)
+        }
+    }
+    </script>
+</body>
+</html>

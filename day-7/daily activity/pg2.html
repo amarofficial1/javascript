@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Weight</label>
+    <input type="text" placeholder="kg" id="kg" required>
+    <label>Height</label>
+    <input type="text" placeholder="cm" id="cm" required>
+    <br><input type="button" value="BMI" onclick="bmi()">
+    <p id="out"></p>
+    <script>
+        bmi=()=>
+    {
+        x=Number(document.getElementById("kg").value)
+        y=Number(document.getElementById("cm").value)
+        z=x/((y/100)**2)
+        a=document.getElementById("out")
+        a.innerHTML="BMI= "+z
+        
+
+
+    }
+    </script>
+</body>
+</html>

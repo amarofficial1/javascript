@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the Age: </label>
+    <input type="text" placeholder="enter your age" required id="n">
+    <br><br><input type="button" value="Check" onclick="vote()">
+    <p id="out"></p>
+    <script>
+        vote=()=>
+    {
+        x=Number(document.getElementById("n").value)
+        if(x>=18)
+        document.getElementById("out").innerHTML=" Is eligible to Vote"
+        else
+        document.getElementById("out").innerHTML=" Not eligible to Vote"
+
+    }
+    </script>
+</body>
+</html>

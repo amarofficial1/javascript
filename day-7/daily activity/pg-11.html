@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter the number: </label>
+    <input type="text" placeholder="enter the number" required id="n">
+    <br><br><input type="button" value="Multiply" onclick="mul()">
+    <table id="t"></table>
+    <script>
+        mul = () => {
+            x = Number(document.getElementById("n").value)
+            y = document.getElementById("t")
+            a = document.createElement("tr")
+            b = document.createElement("td")
+            b.innerHTML = "Multiplication"
+            c = document.createElement("td")
+            c.innerHTML = "Product"
+            a.appendChild(b)
+            a.appendChild(c)
+            y.appendChild(a)
+            for (i = 1; i <= 10; i++) {
+                d = document.createElement("tr")
+                e = document.createElement("td")
+                f = document.createElement("td")
+                e.innerHTML = i + " * " + x + " = "
+                f.innerHTML = i * x
+                d.appendChild(e)
+                d.appendChild(f)
+                y.appendChild(d)
+            }
+        }
+    </script>
+</body>
+
+</html>

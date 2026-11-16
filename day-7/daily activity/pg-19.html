@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Account Balance:</label>
+    <input type="text" placeholder="Enter the account balance." id="n">
+    <br><br><label>PIN:</label>
+    <input type="password" placeholder="Enter your pin." id="n1">
+    <br><br><label>Withdrawal amount:</label>
+    <input type="text" placeholder="Enter withdrawal amount." id="n2">
+    <br> <br><input type="button" value="Total amount" onclick="atm()">
+    <p id="out"></p>
+    <script>
+        atm = () => {
+            try {
+                x = Number(document.getElementById("n").value)
+                y = Number(document.getElementById("n1").value)
+                z = Number(document.getElementById("n2").value)
+                if (y == 666) {
+                    document.getElementById("out").innerHTML = " Login successfull"
+                    if (z <= x) 
+                        document.getElementById("out").innerHTML = "Login Successfull<br> Withdrawal Successfull<br>Your Remaining Balance= " +(x-z)
+                    else
+                        document.getElementById("out").innerHTML = "Login Successfull<br>Insufficient Balance"
+
+                }
+                else
+                    document.getElementById("out").innerHTML = "Wrong pin"
+            }
+            catch (error) {
+                console.log(error)
+            }
+        }
+    </script>
+</body>
+
+</html>
