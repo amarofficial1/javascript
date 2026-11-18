@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Javascript Objects</title>
+</head>
+
+<body>
+    <h1>Check Browser Console</h1>
+    <script>
+        let emp = {
+            empid: "EC123",
+            empname: "Amar",
+            empsalary: 25000,
+            empdesig: "Developer",
+            show: function () {
+                console.log("Employee ID: " + this.empid)
+                console.log("Employee Name: " + this.empname)
+                console.log("Employee Salary: " + this.empsalary)
+                console.log("Employee Designation: " + this.empdesig)
+            },
+            sal:function()
+            {
+                console.log("Increment Salary= 25000")
+                console.log("Total Salary= "+emp.empsalary+" + "+25000+" = "+( emp.empsalary=emp.empsalary+25000))
+                console.log("current salary= "+emp.empsalary)
+            }
+        }
+        emp.show()
+        emp.empplace = "EKM"
+        console.log("Employee Place: " + emp['empplace'])
+        emp.empsalary = emp.empsalary + 5000
+        console.log("Employee Updated Salary: " + emp.empsalary)
+        delete emp['empname']
+        console.log(emp.empname)
+        delete emp.empdesig
+        console.log(emp.empdesig)
+        emp.name="Amar"
+        console.log(emp)
+        emp.sal()
+
+
+
+    </script>
+</body>
+
+</html>

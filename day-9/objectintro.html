@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Javascript Objects</title>
+</head>
+
+<body>
+    <h1>Check Browser Console</h1>
+    <script>
+        let person = {
+            name: "amar",
+            age: 22,
+            place:"thodupuzha",
+            greet: function frnd() {
+                console.log("my friend is "+this.name)
+            },
+            hi: function() {
+                console.log("my age is "+this.age)
+            },
+            hello:()=>{
+                console.log("how are You") //this wont work in arrow function, use this only in normal function.
+            },
+            city:()=>
+            {
+                console.log("I'm coming from "+ person.place)
+            }
+        }
+        console.log(person)
+        console.log(person.name)
+        console.log(person.age)
+        console.log("Name is " + person.name)
+        console.log("Age is " + person.age)
+        person.greet()
+        person.hi()
+        person.hello()
+         person.city()
+        console.log("Place is "+person.place)
+       
+    </script>
+</body>
+
+</html>

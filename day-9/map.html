@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map Methods</title>
+    <script>
+        function demonstrateMaps() {
+            const myMap = new Map();
+            myMap.set("name", "Amar");
+            myMap.set(10, 24);
+            myMap.set(true, "TVM");
+            myMap.set("isStudent", true);
+
+            //gettting values
+            document.getElementById('getName').innerHTML = 'Name: ' + myMap.get("name");
+            document.getElementById('getAge').innerHTML = 'Age: ' + myMap.get(10);
+            document.getElementById('getPlace').innerHTML = 'Place: ' + myMap.get(true);
+            document.getElementById('getStatus').innerHTML = 'Studenstatus: ' + myMap.get("isStudent");
+
+
+            //checking a value exists
+            document.getElementById('hasKey').innerHTML = "Has a key 10: " + myMap.has(10);
+            document.getElementById('hasKey2').innerHTML = "Has a key false: " + myMap.has(false);
+
+            //delete a key value pair
+             document.getElementById('beforedelete').innerHTML = 'Before deleting a key-value pair map size: ' +
+                myMap.size;
+            myMap.delete("name"); //delete name-ram 
+            document.getElementById('afterDelete').innerHTML = "After delete name: " +
+                myMap.has('name'); //false
+                document.getElementById('after').innerHTML = 'After deleting a key-value pair map size: ' +
+                myMap.size; 
+            //clear all elements in Map
+            document.getElementById('beforeClear').innerHTML = 'Before clearing map size: ' +
+                myMap.size;
+            myMap.clear();
+            document.getElementById('afterClear').innerHTML = 'After clearing map size: ' +
+                myMap.size; //0
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Map operations</h1>
+    <button onclick="demonstrateMaps()">Run Map Methods</button>
+    <div id="getName"></div>
+    <div id="getAge"></div>
+    <div id="getPlace"></div>
+    <div id="getStatus"></div>
+    <div id="hasKey"></div>
+    <div id="hasKey2"></div>
+    <div id="beforedelete"></div>
+    <div id="afterDelete"></div>
+    <div id="after"></div>
+    <div id="beforeClear"></div>
+    <div id="afterClear"></div>
+</body>
+
+</html>
