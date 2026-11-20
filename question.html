@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check the browser Console</h1>
+    <script>
+        let product = new Map()
+        product.set("mobile", 50000)
+        product.set("TV", 30000)
+        product.set("fan", 5000)
+        console.log(product)
+
+        //1.add a new product
+        ins = () => {
+            product.set("washing machine", 25000)
+        }
+        ins()
+        console.log("After inserting new element= ")
+        console.log(product)
+        console.log("Size of the map= " + product.size)
+
+        //2.update the price of an existing product
+        product.set("mobile", 30000)
+        console.log("After updating the price of mobile= ")
+        console.log(product)
+
+
+        //3.delete a product
+        product.delete("TV")
+        console.log("After deleting the product TV= ")
+        console.log(product)
+
+
+        //4.display full map
+        console.log("Final Map= ")
+        for(i of product)
+        console.log(i[0]+": "+i[1])
+        console.log("Size of the map= " + product.size)
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
