@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- //create a object with student and 5subject marks ,calculate total and average. -->
+    <h1>Student MarkList</h1>
+    <label>Enter the student Name:</label><br>
+    <input type="text" id="sname" required><br><br>
+    <label>Enter mark of english :</label><br>
+    <input type="text" id="eng" required><br><br>
+    <label>Enter mark of maths :</label><br>
+    <input type="text" id="maths" required><br><br>
+    <label>Enter mark of social :</label><br>
+    <input type="text" id="social" required><br><br>
+    <label>Enter mark of chemistry :</label><br>
+    <input type="text" id="chem" required><br><br>
+    <label>Enter mark of biology :</label><br>
+    <input type="text" id="bio" required><br><br>
+    <input type="button" value="Calculate Total & Average" onclick="mark()">
+    <div id="out"></div>
+
+    <script>
+        mark = () => {
+            let stud = { studname: "", english: "", maths: "", social: "", chemistry: "", biology: "" }
+            a = document.getElementById("sname").value
+            b = document.getElementById("eng").value
+            c = document.getElementById("maths").value
+            d = document.getElementById("social").value
+            e = document.getElementById("chem").value
+            f = document.getElementById("bio").value
+            stud.studname = a
+            stud.english = b
+            stud.maths = c
+            stud.social = d
+            stud.chemistry = e
+            stud.biology = f
+            console.log(stud.english)
+            g1 = document.createElement("p")
+            g1.innerHTMl = "hi all"
+            g2 = document.createElement("p")
+            g2.innerHTMl = stud.english
+            g3 = document.createElement("p")
+            g3.innerHTMl = stud.maths
+            g4 = document.createElement("p")
+            g4.innerHTMl = stud.social
+            g5 = document.createElement("p")
+            g5.innerHTMl = stud.chemistry
+            g6 = document.createElement("p")
+            g6.innerHTMl = stud.biology
+            h = document.getElementById("out")
+            h.appendChild(g1)
+            h.appendChild(g2)
+            h.appendChild(g3)
+            h.appendChild(g4)
+            h.appendChild(g5)
+            h.appendChild(g6)
+
+
+
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
