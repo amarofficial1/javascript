@@ -12,5 +12,3 @@ rectangle={
 console.log(rectangle)
 rectangle.area()
 rectangle.perimeter()
-
-

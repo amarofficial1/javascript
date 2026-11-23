@@ -5,7 +5,7 @@ bank.set("Amar",99999)
 bank.set("Jain",50000)
 bank.set("Siva",40000)
 bank.set("Paul",10000)
-bank.set("Adona",60000)
+bank.set("Adona",99999)
 x=1
 for( i of bank)
 {
@@ -19,10 +19,10 @@ for( i of bank)
     x=0
     for(j of bank)
     {
-        if(i[1]>j[1])
+        if(i[1]>=j[1])
             x++
     }
-    if(x==(bank.size-1))
+    if(x==(bank.size))
     {
        console.log("The account holder with highest balance:"+i[0])
        console.log("with Bank balance of : ₹"+i[1])
